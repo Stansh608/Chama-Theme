@@ -1,0 +1,2029 @@
+/*
+Theme Name: Chama-Server
+Author: chama
+Author URI: https://Stansh.com
+Description: The Official Theme for Vehicle_web
+Version: 1.0
+*/ 
+#wrong, #wrongad, #num,#pass{
+	display: none;
+	color: red;
+	font-weight: bold;
+}
+h1 {
+  padding: 8px;
+  
+  border-radius: 8px;
+  margin: 0;
+  font-size: 64px;
+  font-family: "Roboto Slab", serif;
+}
+
+.card-image1{
+  justify-content: center;
+  text-align: center;
+}
+p {
+  line-height: 1.5;
+}
+
+main {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.card{
+  margin-bottom: 3px;
+}
+
+/* Inputs */
+
+/* Banner */
+
+#banner {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.2) url("img/5-Ways-to-Make-Your-Investments-Work-Harder.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+}
+#banner1 {
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: rgba(0, 0, 0, 0.2) url("img/main-bg1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-blend-mode: overlay;
+	color: white;
+  }
+
+#banner h3 {
+  
+  border-radius: 8px;
+  padding: 0 24px;
+  font-size: 24px;
+}
+
+/* Search Box */
+
+#searchbox {
+  position: fixed;
+  right: 0;
+  top: 24px;
+  width: 500px;
+  pointer-events: none;
+  z-index: 50;
+  transition: 0.4s;
+}
+
+#searchbox input {
+  height: 48px;
+  width: 100%;
+}
+
+/* Navigation */
+
+nav {
+  height: 72px;
+  background: #020a2b;
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin: 0;
+  position: fixed;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+nav a {
+  padding: 0 32px;
+  color: #eee;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.active {
+  color: #f783ae;
+}
+
+#logo-img {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  color: white;
+  transition: 0.4s;
+  padding: 3%;
+}
+
+#logo-img img {
+  height: 70px;
+  
+}
+.navbar-admin{
+	left: 0%;
+	padding: 100px;
+	
+	position: fixed;
+	
+
+}
+
+
+
+#menu-icon {
+  height: 100%;
+  font-size: 28px;
+  padding: 0 4px;
+  color: #eee;
+  display: none;
+  align-items: center;
+}
+
+/* Search Icon */
+
+#search-icon {
+  color: white;
+  padding: 0 32px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#search-icon:hover {
+  color: red;
+}
+
+/* Slideout Menu */
+
+#slideout-menu {
+  display: none;
+  background:teal;
+  z-index: 100;
+  position: fixed;
+  transition: 0.4s;
+  margin-top: 72px;
+  width: 100%;
+  text-align: center;
+  opacity:0;
+  pointer-events:none;
+}
+
+#slideout-menu ul {
+  list-style: none;
+  padding: 0 32px;
+}
+
+#slideout-menu ul li {
+  padding: 8px;
+}
+
+#slideout-menu a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+#slideout-menu input {
+  width: 85%;
+  padding: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Sections */
+
+section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  transition: all 0.4s;
+  display: inline-block;
+  padding: 4px 32px;
+  text-align: center;
+}
+.padd{
+  padding: 4px 32px;
+}
+.section-heading:hover {
+  padding: 4px 48px;
+  background: wheat;
+}
+
+/* Section Source */
+
+#section-source p {
+  padding: 8px;
+  text-align: center;
+}
+
+#section-source a {
+  margin: 8px;
+  text-align: center;
+}
+
+/* Card */
+
+.card:hover {
+background-color:#ddd;
+  border-radius: 10px;
+  border: 2px;
+
+  transition: 0.4s;
+}
+
+.card-image:hover {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card .card-description {
+  padding: 0 8px;
+  margin-left: 30px;
+}
+
+.card-meta-blogpost{
+  color:#333;
+  font-size:14px;
+  padding: 16px;
+  font-family:'Roboto Slab', serif;
+}
+
+.card-meta-blogpost a{
+  color:#333;
+}
+
+/* Button Read more */
+
+.btn-readmore {
+  padding: 8px 24px;
+  border: 3px solid black;
+  transition: 0.4s;
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+}
+
+.btn-readmore:hover {
+  background: red;
+  text-decoration: none;
+  padding: 8px 64px 8px 24px;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  background: #020a2b;
+  border-radius: 10px;
+  padding: 8px;
+  color: #eee;
+  display: flex;
+}
+
+footer a {
+  color: white;
+}
+
+footer #left-footer {
+  flex: 1;
+  border-right: 1px solid red;
+  padding-left: 32px;
+}
+
+footer #left-footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+footer #right-footer {
+  flex: 2;
+  padding: 8px;
+  text-align: center;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-youtube,
+footer #social-media-footer a .fa-github {
+  color: white;
+  transition: 0.4s;
+}
+
+footer #social-media-footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+footer #social-media-footer ul li {
+  font-size: 48px;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+footer #social-media-footer ul li:hover a .fa-youtube {
+  color: red;
+}
+
+footer #social-media-footer ul li:hover a .fa-facebook {
+  color: #3b5998;
+}
+
+footer #social-media-footer ul li:hover a .fa-github {
+  color: #bbb;
+}
+
+/* Blog List page */
+
+.page-heading{
+  font-size:32px;
+  font-family:'Roboto Condensed', sans-serif;
+  border-left:3px solid black;
+  border-right:3px solid black;
+  transition: all 0.4s;
+  display:inline-block;
+  padding:4px 32px;
+  margin-top: 120px;
+}
+
+.page-heading:hover{
+  padding:4px 48px;
+  background:red;
+}
+
+.card-meta{
+  color:#333;
+  font-size: 14px;
+  padding-left:8px;
+  font-family:'Roboto Slab', serif;
+}
+
+.card-meta a{
+  color:#333;
+}
+
+/* Pagination */
+
+.pagination{
+  padding:8px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.pagination a{
+  border-top: 3px solid white;
+  display: inline-block;
+  padding:8px 16px;
+  transition:0.4s;
+}
+
+.pagination a:hover{
+  text-decoration: none;
+  border-top:3px solid black;
+}
+
+
+
+/* Sidebar */
+
+#sidebar{
+  background:#333;
+  flex:1;
+  padding: 8px 16px;
+  color:white;
+  box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  #menu-icon {
+    display: flex;
+  }
+
+  #slideout-menu {
+    display: block;
+  }
+
+  #searchbox {
+    display: none;
+  }
+
+  #blogpost{
+    width:100%;
+    border-left:0;
+  }
+
+  #sidebar{
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  main {
+    width: 95%;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .card,
+  .card .card-image img {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer #left-footer {
+    flex: 1;
+    border-right: 0;
+    padding-left: 0;
+  }
+
+  footer #right-footer {
+    background: #eee;
+    color: black;
+  }
+
+  footer #right-footer a {
+    color: black;
+  }
+
+  footer #social-media-footer a .fa-facebook,
+  footer #social-media-footer a .fa-youtube,
+  footer #social-media-footer a .fa-github {
+    color: black;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  #banner h3 {
+    font-size: 20px;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  #logo-img {
+    padding: 0;
+  }
+}
+
+@media (min-width: 720px) {
+  main {
+    width: 95%;
+  }
+  .card {
+    width: 45%;
+  }
+  .card .card-image img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 85%;
+  }
+}
+
+
+
+/* homepage card*/
+.card2{
+  background:white ;
+  width: 25%;
+  margin-bottom:70px;
+}
+.cardnotify{
+	background:white ;
+  width: 50%;
+  border: 2px solid beige;
+  box-shadow: 5px salmon;
+  border-right: 4px solid yellow;
+  margin-bottom:70px;
+}
+.card-image2{
+  text-align: center;
+}
+#fs1{
+  border-color: goldenrod;
+  border-radius: 10px;
+  background: snow;
+  width: 70%;
+  padding: 50px 90px;
+  height: 70%;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+}
+#fs1_btn{
+  margin-left: 35px;
+  margin-top: 45px;
+  padding: 7px 80px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  background: snow;
+  border-radius: 10px;
+  color: #020a2b;
+}
+#fs1_btn:hover{
+	background-color:#020a2b;
+	color: white;
+}
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.desc input[type=text]{
+	width: 50px;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.resetp{
+	margin-left: 10%;
+	margin-right: 20%;
+}
+.btnreset{
+	margin-left: 20%;
+	border-radius: 10px;
+	width: 40%;
+	font-size: 20px;
+	background-color: #04AA6D;
+	color: white;
+	text-align: center;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-admin{
+	margin-left: 20%;
+
+	text-align: center;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0 15px;
+  }
+  th {
+	background-color: #4287f5;
+	color: white;
+	font-size: 30px;
+  }
+  th,
+  td {
+	width: 150px;
+	text-align: center;
+	border: 1px solid black;
+	padding: 5px;
+  }
+  #admin-heading{
+	margin-left: 35%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/* Set a style for all buttons */
+button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+	font-size: 25px;
+	
+	}
+	
+	
+	/*  login and signup styles*/
+	.signupbtn:hover {
+	opacity:1;
+	}
+	
+	/* Extra styles for the cancel button */
+	.cancelbtn {
+	padding: 14px 20px;
+	background-color: #f44336;
+	}
+	
+	/* Float cancel and signup buttons and add an equal width */
+	.cancelbtn, .signupbtn {
+	float: left;
+	
+	width: 50%;
+	}
+	
+	/* Add padding to container elements */
+	.ff_container {
+		  /* fallback for old browsers */
+	padding: 10px;
+	color:black;
+	
+	}
+	#login,#signup{
+		width: 100%;
+	}
+	#popup {
+	justify-content: center;
+		/* fallback for old browsers */
+	padding: 16px 24px ;
+	display: none;
+	left: 30%;
+	top: 20%;
+	width: 50%;
+	padding-top: 2px;
+	position: absolute;
+	height: 80%;
+	bottom: 60px;
+	background-color: rgb(150, 42, 123);
+	
+	
+	}
+	#popup .close{
+			color: red;
+		background-color:  rgb(150, 42, 123);
+		padding-top: 22px;
+		padding-right: 0;
+		display: flex;
+		margin: 0;
+		
+	}
+	@media screen and (max-width: 768px) {
+		#popup{
+			padding-top: 55px;
+			position: relative;
+			justify-content: center;
+			display: none;
+			width: 100%;
+			left: 0%;
+			
+			
+		}
+		#popup .close{
+			color: red;
+			background-color:  rgb(150, 42, 123);
+			padding-right: 0;
+			display: flex;
+			
+		}
+	}
+	
+
+	
+	#signup{
+		display: none;
+	}
+	.close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+	}
+	
+	.close:hover,
+	.close:focus {
+	color: #f44336;
+	cursor: pointer;
+	}
+	
+	/* Clear floats */
+	.clearfix::after {
+	content: "";
+	clear: both;
+	font-size: 23px;
+	display: table;
+	}
+	
+	/* Change styles for cancel button and signup button on extra small screens */
+	@media screen and (max-width: 300px) {
+	.cancelbtn, .signupbtn {
+		color: black;
+	width: 100%;
+	}
+	}
+	
+	
+	
+	/*for tabs of login and sign up*/
+	.tablink {
+		background-color: #555;
+		color: white;
+		
+		position: relative;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		margin: 0;
+		font-size: 17px;
+		width: 25%;
+	  }
+	
+	
+	
+	
+	  /*animate  */
+	  
+	span.psw {
+		float: right;
+		padding-top: 16px;
+	  }
+	  
+	  
+	  
+	  /* Modal Content/Box */
+	  .modall-content {
+		 justify-content: center;
+		background-color: #fefefe;
+		margin:30px;/* 5% from the top, 15% from the bottom and centered */
+		
+		border-radius: 5px;
+		 /* Could be more or less, depending on screen size */
+	  }
+	  .login_container{
+		  justify-content: center;
+		  margin-left: 100px;
+		  width: 80%;
+	
+	  }
+	  #login-header{
+		  text-align: center;
+		  font-size: 40px;
+	  }
+	  
+	  
+	  #ppk{
+		text-align: right;
+		font-size: 25px;
+		color: rgb(180, 16, 16);
+		background-color: whitesmoke;
+	}
+	
+	  
+	  /* The Close Button (x) */
+	  .close {
+		position: absolute;
+		right: 25px;
+		top: 0;
+		color: #000;
+		font-size: 35px;
+		font-weight: bold;
+	  }
+	  
+	  .close:hover,
+	  .close:focus {
+		color: red;
+		cursor: pointer;
+	  }
+	  
+	  /* Add Zoom Animation */
+	  .animate {
+		-webkit-animation: animatezoom 0.6s;
+		animation: animatezoom 0.6s
+	  }
+	  
+	  @-webkit-keyframes animatezoom {
+		from {-webkit-transform: scale(0)} 
+		to {-webkit-transform: scale(1)}
+	  }
+		
+	  @keyframes animatezoom {
+		from {transform: scale(0)} 
+		to {transform: scale(1)}
+	  }
+	  
+	  /* Change styles for span and cancel button on extra small screens */
+	  @media screen and (max-width: 300px) {
+		span.psw {
+		   display: block;
+		   float: none;
+		}
+		.cancelbtn {
+		   width: 100%;
+		}
+	}
+	 
+	#para{
+		padding-left: 25px;
+		font-size: 20px;
+	}
+	#the-content h1{
+		text-align: center;
+		font-size: 35px;
+		text-decoration: #f44336;
+	}
+	#the-content h2{
+		text-align: center;
+		font-size: 35px;
+		text-decoration: #f44336;
+	}
+	#the-content h3{
+		text-align: center;
+		font-size: 35px;
+		text-decoration: #f44336;
+	}
+	#the-content h4{
+		text-align: center;
+		font-size: 35px;
+		text-decoration: #f44336;
+	}
+	#the-content h5{
+		text-align: center;
+		font-size: 35px;
+		text-decoration: #f44336;
+	}
+	#the-content h6{
+		text-align: center;
+		font-size: 35px;
+		text-decoration: #f44336;
+	}
+	hr{
+		width: 90%;
+		
+		margin: 30px;
+		padding: 5px;
+		border-radius: 15px;
+		text-align: center;
+		background: turquoise;
+	}
+	#the-content{
+		padding: 40px;
+	}
+	#comment-section{
+		text-align: center;
+	}
+	
+	
+	  
+	  .dropdown {
+		  position: relative;text-align: center;
+		  padding: 30px;
+	
+	
+		
+	  }
+	.dropdown2{
+		  display: none;
+	  }
+	  
+	  .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 100px;
+		margin: 10px;
+		
+	  }
+	  
+	  .dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	  }
+	  
+	  .dropdown-content a:hover {background-color: #ddd;}
+	  
+	  .dropdown:hover .dropdown-content {display: block;}
+	  
+	  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+	
+	
+	
+	  #about-logo{
+		  text-align: center;
+		  padding-left: 100px;
+	  }
+	
+	
+	  #about-heading{
+		  text-align: center;
+		display: flex;
+		justify-content: center;
+		
+		font-size: 35px;
+		margin-left: 35%;
+	
+		 /* padding: 12px 40px;
+		fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #9114ff, #da22ff);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #38f8ef, #da22ff);
+		width: 40%;
+		border-radius: 5px;
+	}
+	#about-para{
+		margin: 30px;
+	}
+	.pagination{
+		background: chocolate;
+	}
+	.comments{
+		justify-content: center;
+		width: 90%;
+		text-align: center;
+		margin:50px;
+		background: cornsilk;
+		list-style: none;
+		
+	}
+	.comments-heading{
+		background: -webkit-linear-gradient(to right, #9114ff, #da22ff);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #38f8ef, #da22ff);
+		text-align: center;
+		font-size: 30px;
+		border-radius: 10px;
+	
+		width: 100%;
+		
+		
+	}
+	.comment-form{
+		display: flex;
+		flex-direction: column;
+	
+	}
+	.comment-form input,
+	.comment-form textarea{
+		margin-bottom: 16px;
+		margin-left: 40px;
+		margin-right: 50px;
+		font-size: 18px;
+	}
+	.comment-note{
+		text-align: center;
+		color: red;
+	}
+	#comments-section textarea{
+		height: 168px;
+	}
+	.form-submit .submit,
+	.wpcf7 .wpcf7-submit{
+		background: white;
+		font-weight: bold;
+		width: 30%;
+		font-size: 20px;
+		padding: 8px;
+		border-radius: 10px;
+		border: 2px solid black;
+		height: 48px;
+		cursor: pointer;
+		transition: 0.4s;
+		box-shadow: initial;
+	
+	}
+	.form-submit .submit:hover,
+	.wpcf7 .wpcf7-submit:hover{
+		background: red;
+		color: white;
+	}
+	.proceed{
+		
+		text-align: center;
+		font-size: 35px;
+		text-decoration: none;
+		
+	}
+	.search-icon{
+		display: none;
+		color: white;
+		padding: 32px;
+	}
+	
+	
+	
+
+
+.card-description{
+	font-size: 20px;
+}
+#btnlogadmin{
+	align-items: center;
+	margin-left: 30%;
+	width: 70%;
+	border-radius: 10%;
+
+}
+#wrongad{
+	font-size: 20px;
+}
+.modall-content{
+	font-size: 25px;
+}
+
+	/*Inputs*/
+input[type=text], input[type=password], input[type=number], input[type=email] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	font-size: 19px;
+	border: none;
+	background: #e3e3ee;
+	}
+	
+	/* Add a background color when the inputs get focus */
+	input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email] :focus {
+	background-color: #ddd;
+	outline: none;  
+	border-radius: 10px;
+	border: 2px solid black;
+	}
+
+.adminloginbtn{
+	float: right;
+	font-size: 25px;
+	text-align: center;
+	width: 20%;
+	height: 70px;
+	background-color: #04AA6D;
+	border-radius: 15px;
+	color: white;
+}
+
+
+
+
+
+
+	/* Reset Password*/
+	body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius:5px;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+.btnpost{
+	width: 30%;
+	margin-left: 30%;
+	font-size: 30px;
+	border-radius: 10px;
+	background-color: #04AA6D;
+
+}
+.btnpost:hover{
+	color: white;
+	background-color: #020a2b;
+}
+.formpost{
+	margin-left: 10%;
+	
+}
+
+
+.adminwindow{
+	margin-left: 161px;
+}
+
+
+
+
+
+.sidenav {
+	height: 100%; /* Full-height: remove this if you want "auto" height */
+	width: 250px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	margin-top: 30px; /* Stay at the top */
+	left: 0;
+	background-color: #020a2b;; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 1000;
+	
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 28px;
+	color: wheat;
+	display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  .sidenav a.active {
+	color: #f1f1f1;
+	background-color: #3e8e41;
+  }
+  
+  /* Style page content */
+  .main {
+	margin-left: 160px; /* Same as the width of the sidebar */
+	padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+
+
+
+  
+/* The popup form - to send email */
+.form-pop {
+	display: none;
+	position: fixed;
+	width: 300px;
+	bottom: 0;
+	right: 40px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+  }
+
+.btn1-sendMail{
+	width: 100%;
+	font-size: 20px;
+	background-color: green;
+	color: white;
+
+	
+}
+.btn2-cancel{
+	width: 100%;
+	font-size: 20px;
+	background-color: red;
+	color: white;
+}
+  .btn1-adminProject{
+	  width: 20%;
+	  margin-left: 20%;
+	  font-size: 25px;
+	  
+	  background-color: #04AA6D;
+	  color: white;
+	  border-radius: 10px;
+  }
+
+  .btn2-adminProject{
+	width: 20%;
+	padding: 10px;
+	margin-right: 20%;
+	font-size: 25px;
+	background-color:red;
+	color: white;
+	border-radius: 10px;
+}
+
+.notview{
+	display: none;
+}
+
+
+.admindashboard{
+	padding-top: 0px;
+	margin-left: 10%;
+}
+
+
+
+.form-individual{
+	margin-left: 150px;
+	width: 100%;
+	right: 0;
+	text-align: center;
+	height: 400px;
+	border: 2px solid blue;
+	border-radius: 10px;
+	background-color: wheat;
+
+
+}
+.form-broadcast{
+	left: 60%;
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	border: 2px solid blue;
+	background-color: wheat;
+	border-radius: 10px;
+	margin-left: 150px;
+}
+.adminNotification{
+	margin-left: 19%;
+	padding-top: 100px;
+	width: 50%;
+	
+}
+.btn-sendnotification{
+	width: 50%;
+	text-align: center;
+
+	
+	font-size: 25px;
+	
+	background-color: #04AA6D;
+	color: white;
+	border-radius: 10px;
+}
+
+
+
+
+.selectemail{
+	font-size: 15px;
+}
+.btn-delete{
+	background-color: red;
+	color: white;
+	width: 100px;
+	font-size: 20px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+
+
+
+.cardnotify {
+  
+
+
+  font-size: 25px;
+ 
+
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 40%;
+  background: #0f81ad;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+/*
+.card-description2 {
+
+position: absolute;
+height: 10%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+*/
+.cardnotify1 {
+  
+	 
+	font-size: 25px;
+	
+
+  
+	transform: translate(-50%, -50%);
+
+	background: #9e1818;
+	overflow: hidden;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0 0 20px 8px #d0d0d0;
+  }
+
+
+/*
+
+.flap {
+  width: 100%;
+  height: 100%;
+}
+
+.flap::before {
+	text-align: center;
+  position: absolute;
+  font-size: 30px;
+ 
+  content: "ALL";
+  height: 100%;
+  width: 50%;
+  background: yellow;
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.flap::after {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  content: "Notifications";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background-color: #04AA6D ;
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.cardnotify:hover .flap::after {
+  transform: translatex(300px);
+}
+
+
+.cardnotify:hover .flap::before{
+  transform: translatex(-300px);
+}
+*/
+
+
+
+
+
+
+/* cards notifications*/
+/* Float four columns side by side */
+.columnn {
+	float: left;
+	font-size: 25px;
+	width: 46%;
+	height: 400px;
+	left: 5%;
+	
+	 
+
+
+	background: #ffffff;
+	overflow: hidden;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0 0 20px 8px #d0d0d0;
+	
+	padding: 0 10px;
+	margin-right: 40px;
+	
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	padding: 27px;
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+	.columnn {
+	  width: 100%;
+	  display: block;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  /* Style the counter cards */
+  .cardn {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: #f1f1f1;
+  }
+  .info{
+	  background-color:rgb(202, 177, 177);
+	  color: brown;
+	  border-radius: 20px;
+  }
+  .info-desc{
+	  font-size: 15px
+	  ;
+  }
+  .admindashboard{
+	  margin-left: 17%;
+	  margin-right: 0%;
+	  height: 700px;
+	  
+  }
+  .admindashboard1{
+	background-color: black;
+	height: 100%;
+	
+}
+.full-project{
+	width: 60%;
+	border-radius: 20px;
+	background-color:rgb(180, 203, 204);
+	text-align: center;
+	margin-left: 20%;
+}
+.innerfullproject{
+	width: 80%;
+	margin-left: 10%;
+
+}
+
+  .adminprofilepic{
+	  text-align: center;
+  }
+
+
+
+
+
+  
+.mySlides {display: none;}
+.img-hi{vertical-align: middle;
+border-radius: 10px;
+height: 500px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 500px;
+  position: relative;
+  border-radius: 10px;
+  margin: 0;
+  background-color: darkorchid;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 10px;
+  background-color: darkorchid;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.get-started{
+	font-size: 30px;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 10px 20px;
+	height: 60px;
+	width: 20%;
+	border: none;
+	outline: none;
+	/* background: -webkit-linear-gradient(to right, #3c1053, #19db5a);  Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3c1053, #19db5a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	color: #fff;
+	transition: all 0.3s ease;
+
+}
+.date{
+	font-size: 19px;
+	color: blue;
+
+}
+.penalty{
+	color: red;
+	font-size: 20px;
+}
+.userimage{
+	float: left;
+	padding: 0 60px;
+	margin-left: 100px;
+}
+.usertopic{
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 1000;
+}
+.userbody{
+	margin-left: 100px
+
+}
+.btnclearbio{
+	width: 10%;
+	margin-left: 20px;
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 0 30px;
+	margin-right: 20px
+
+}
+.btnsubmitbio{
+	width: 10%;
+	margin-left: 20px;
+	background-color: green;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 0 30px;
+	margin-right: 20px
+
+
+}
+.submit_passBtn{
+	width: 80%;
+	color: white;
+	background-color: #3e8e41;
+	font-size: 20px;
+	padding: 15px;
+	border-radius: 10px;
+}
+.inputPass{
+	width: 40%;
+	background-color: wheat;
+	text-align: center;
+	border-radius: 10px;
+}
+
+
+
+
+/*Animating the banner text */
+
+@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+
+
+  
+  .dark-mode {
+	background-color: black;
+	color: white;
+  }
+
+
+  /*left right orientation*/
+  .hiw-cols-first {
+	  border-radius: 20px;
+	display: flex;
+	align-items: flex-start;
+	line-height: 40px;
+	justify-content: space-between;
+	background-color:wheat;
+  }
+  .hiw_heading{
+	  font-family: lora;
+	  font-size: 25px;
+  }
+  .btn-dark-mode{
+	  width: 20%;
+	  background-color: #020a2b;
+	  border-radius: 20px;
+	  font-size: 17px;
+  }
+  .admindesc{
+	  
+	  margin-left: 28%;
+	  font-size: 35px;
+	  line-height:40px;
+	  color: white;
+  }
+
+ .voteform{
+	 background: black;
+	 color: white;
+	 font-size: 30px;
+ }
+  .innerrate{
+	  background: #020a2b;
+	  border-radius: 10px;
+	  width: 20%;
+	  height: 30%;
+	  color: white;
+	  font-size: 30px;
+	  margin-left: 40%;
+	  margin-right: 20px;
+  }
+  .innerrat{
+	background: #020a2b;
+	border-radius: 10px;
+	width: 20%;
+	height: 30%;
+	color: white;
+	display: none;
+	font-size: 30px;
+	margin-left: 40%;
+	margin-right: 20px;
+}
+.chamamoney{
+	width: 100%;
+	
+	justify-content: space-between;
+}
+.chamamoneyc{
+	text-align: center;
+	float: left;
+	border-right: 6px yellowgreen;
+	border-right-style:groove ;
+	width: 35%;
+	padding: 0 60px;
+	border-radius: 100%;
+	margin-left: 80px;
+	padding: 100px;
+	background-color: #3c1053;
+	color: #04AA6D;
+}
+.btnPrint{
+width: 20%;
+float: right;
+font-size: 20px;
+color: white;
+background-color: #3c1053;
+border-radius: 10px;
+margin-right: 13px;
+padding-right: 20px;
+margin-top: 20px;
+}
+.setDate{
+	
+	margin-left: 30%;
+}
+.selectdate{
+	background-color: wheat;
+	padding: 15px;
+	text-align: center;
+	font-size: 20px;
+	justify-content: space-between;
+	border-radius: 10px;
+	border: 2px solid blue;
+	width: 70%;
+
+}
+.dayRemain{
+	text-align: center;
+	font-size: 21px;
+	margin-left: 27%;
+	width: 50%;
+	color: blue;
+	font-weight: 1000;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: dashed;
+}
+.dispDays{
+	font-size: 20px;
+	font-weight: 1000;
+	width: 50%;
+	margin-left: 30%;
+	color: blue;
+}
+.probudgethead{
+
+	text-align: center;
+	justify-content: space-around;
+	font-size: 25px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.budget{
+	width: 70%;
+	background-color: whitesmoke;
+	margin-left: 200px;
+	border: 2px  double blueviolet;
+	border-radius: 10px;
+}
+.titles{
+	border-radius: 15px;
+	font-size: 23px;
+	margin-left: 30px;
+	margin-right: 30px;
+	background-color: wheat;
+}
+.budgetbody{
+	font-size: 23px;
+	margin-left: 100px;
+	margin-right: 30px;
+	
+}
+.analysis{
+	margin-left: 50%;
+	font-size: 23px;
+
+
+}
+.budgetview{
+	margin-left: 20%;
+	font-size: 23px;
+	background-color: wheat;
+	border-radius: 10px;
+}
+.contentb{
+	margin-left: 20px;
+}
+.head{
+	font-size: 30px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+	justify-content: space-between;
+}
+.selectinfo{
+	margin-left: 30px;
+	text-align: center;
+
+}
+.budgetbtn{
+	text-align: center;
+	font-size: 23px;
+	border-radius: 10px;
+	color: white;
+	background-color: #3c1053;
+
+}
+.about-head{
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 43px;
+	font-weight: bold;
+}
+.aboutp{
+	margin-left: 30px;
+	margin-right: 70px;
+	font-size: 23px;
+
+}
